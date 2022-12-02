@@ -10,6 +10,8 @@ header {
     margin: 0px;
     width: 1440px;
     height: 138px;
+    margin-top: -8px;
+    margin-left: -7px;
 }
 
 .container {
@@ -69,6 +71,14 @@ td {
 
 }
 
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 1423px;
+
+}
+
 .table1 {
     margin-left: 9px;
     margin-top: 22px;
@@ -85,7 +95,10 @@ th {
     height: 33px;
     border: 1px solid #B9B9B9;
     font-weight: normal;
-    background-color: #ebebeb;
+    background-color: #dddada;
+    text-align: left;
+    padding-left: 13px;
+    font-size: 12px;
 }
 
 td {
@@ -94,24 +107,68 @@ td {
     height: 33px;
     border: 1px solid #B9B9B9;
     font-weight: normal;
+    padding-left: 13px;
+    font-size: 12px;
 }
 
 
 .grp1 {
     border-radius: 40px;
     height: 26px;
-    width: 64px;
+    width: 66px;
     border: 4px solid #000461;
     justify-content: space-around 4px;
-    align-items: center;
+    text-align: center;
+    font-size: 12px;
 
+}
+
+.grp3 {
+    border-radius: 40px;
+    height: 26px;
+    width: 66px;
+    border: 4px solid #000461;
+    justify-content: space-around 4px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .button1 {
     border: 4px solid #000461;
     border-radius: 40px;
-    width: 156px;
+    width: 160px;
     height: 36px;
     color: #000461;
     margin-top: 6px;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #000461;
+    width: 1440px;
+    height: 138px;
+    margin-top: 328px;
+}
+
+.colonne {
+    height: 258px;
+    width: 217px;
+}
+
+.colonne1 {
+    margin-left: -9px;
+}
+
+.semestreSelect {
+    border: 4px solid #000461;
+    border-radius: 40px;
+    width: 160px;
+    height: 36px;
+    color: #000461;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.colonne3 {
+    margin-top: -42px;
 }
