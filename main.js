@@ -18,7 +18,7 @@ boutton.addEventListener("click", (event) => {
 
     //il faut empécher le rechargement de la page
     event.preventDefault()
-    console.log("d9ueuhdeo")
+    console.log("d9ueuheo")
 
     //créer un élément tr
     let tr = document.createElement("tr")
