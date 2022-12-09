@@ -9,18 +9,40 @@ let modules = document.getElementById("module1")
 
 let notes = document.getElementById("note1")
 
-let table = document.getElementById("table1")
-
+let table = document.getElementById("table2")
 
 
 //ajouter un event sur le boutton 
 boutton.addEventListener("click", (event) => {
 
-    //il faut empécher le rechargement de la page
-    event.preventDefault()
-    console.log("d9ueuheo")
+})
+//
 
-    //créer un élément tr
+let bouttons = document.getElementsByClassName("button1")
+console.log(bouttons)
+
+
+Array.from(bouttons).forEach(btn => {
+    btn.addEventListener("click", ajouterNote)
+});
+
+function ajouterNote(event) {
+
+    console.log(event.target)
+    let table2 = event.target.parentElement.parentElement.nextElementSibling.firstElementChild
+    console.log(table2)
+
+    // event.target = boutton / previousSibling pour l'élément d'à coté /  
+    let module2 = event.target.previousSibling.previousSibling
+    console.log(module2)
+
+    let note2 = event.target.previousSibling.previousSibling.previousSibling.previousSibling
+
+
+    //il faut empécher le rechargement de la page
+    console.log("pdjednoe")
+    event.preventDefault()
+
     let tr = document.createElement("tr")
 
     //créer un élément td
@@ -28,19 +50,15 @@ boutton.addEventListener("click", (event) => {
     let tdModule = document.createElement("td")
 
     //remplir l'élément td avec la note du input
-    tdNote.innerHTML = notes.value
-    tdModule.innerHTML = notes.value
+
+    //                 à faire
+    tdNote.innerHTML = note2.value
+    tdModule.innerHTML = module2.value
 
     //ajouter l'élément td dans l'élément tr
     tr.appendChild(tdNote)
     tr.appendChild(tdModule)
 
     //ajouter l'élément tr dans la table
-    table.appendChild(tr)
-
-
-})
-//
-
-
-
+    table2.appendChild(tr)
+}

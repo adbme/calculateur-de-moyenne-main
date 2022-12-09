@@ -11,7 +11,7 @@ header {
     width: 1440px;
     height: 138px;
     margin-top: -8px;
-    margin-left: -7px;
+    margin-left: -8px;
 }
 
 .container {
@@ -148,6 +148,7 @@ footer {
     width: 1440px;
     height: 138px;
     margin-top: 328px;
+    margin-left: -8px;
 }
 
 .colonne {
@@ -171,4 +172,18 @@ footer {
 
 .colonne3 {
     margin-top: -42px;
+}
+
+.reussi {
+    width: 122px;
+    height: 47px;
+    left: 1260px;
+    top: 213px;
+    color: rgb(255, 255, 255);
+    background-color: #008C1F;
+    border: solid 4px rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(131, 131, 131);
+    font-weight: 1000;
+
 }
